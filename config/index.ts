@@ -1,13 +1,13 @@
 import type { AppInfo } from '@/types/app'
-export const APP_ID = ''
-export const API_KEY = ''
+export const APP_ID = 'f967d257-1a05-4abd-b5df-3969111771fe'
+export const API_KEY = 'app-3zk9YioSVg9avUWXsxoWWDz3'
 export const API_URL = ''
 export const APP_INFO: AppInfo = {
   title: 'Chat APP',
   description: '',
   copyright: '',
   privacy_policy: '',
-  default_language: 'zh-Hans',
+  default_language: 'en',
 }
 
 export const isShowPrompt = false
