@@ -10,6 +10,7 @@ import { atelierHeathLight } from 'react-syntax-highlighter/dist/esm/styles/hljs
 export function Markdown(props: { content: string }) {
   return (
     <div className="markdown-body" style={{ color: '#B9BDC7' }}>
+      {/* CHANGE: TEXT COLOR BUBBLE CHAT */}
       <ReactMarkdown
         remarkPlugins={[RemarkMath, RemarkGfm, RemarkBreaks]}
         rehypePlugins={[
