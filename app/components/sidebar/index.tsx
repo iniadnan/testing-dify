@@ -1,6 +1,6 @@
 import React from 'react'
 import type { FC } from 'react'
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next' CHANGE: BUTTON NEW CHAT SIDEBAR
 import {
   ChatBubbleOvalLeftEllipsisIcon,
   PencilSquareIcon,
@@ -29,7 +29,7 @@ const Sidebar: FC<ISidebarProps> = ({
   onCurrentIdChange,
   list,
 }) => {
-  const { t } = useTranslation()
+  // const { t } = useTranslation() CHANGE: BUTTON NEW CHAT SIDEBAR
   return (
     // <div className="shrink-0 flex flex-col overflow-y-auto bg-white pc:w-[244px] tablet:w-[192px] mobile:w-[240px]  border-r border-gray-200 tablet:h-[calc(100vh_-_3rem)] mobile:h-screen">
     <div className="shrink-0 flex flex-col overflow-y-auto bg-[#1E222C] pc:w-[244px] tablet:w-[192px] mobile:w-[240px] tablet:h-[calc(100vh_-_3rem)] mobile:h-screen">
@@ -38,8 +38,8 @@ const Sidebar: FC<ISidebarProps> = ({
         <div className="flex flex-shrink-0 p-4 !pb-0">
           {/* <Button onClick={() => { onCurrentIdChange('-1') }} className="group block w-full flex-shrink-0 !justify-start !h-9 text-primary-600 items-center text-sm"> */}
           {/* CHANGE: SIDEBAR HEADER BUTTON NEW CHAT */}
-          <Button onClick={() => { onCurrentIdChange('-1') }} className="group block w-full flex-shrink-0 !justify-start !h-9 bg-[#4C83FF] text-[#D2D7E1] border border-[#4C83FF] items-center text-sm">
-            <PencilSquareIcon className="mr-2 h-4 w-4" /> {t('app.chat.newChat')}
+          <Button onClick={() => { onCurrentIdChange('-1') }} className="group block w-full flex-shrink-0 !justify-start !h-9 text-white bg-[#4C83FF] border-none items-center text-sm">
+            <PencilSquareIcon className="mr-2 h-4 w-4" /> <strong className='font-semibold text-[#DEDEDE]'>Tambah Pelajaran Baru</strong>
           </Button>
         </div>
       )}
