@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import produce from 'immer'
 import { useBoolean, useGetState } from 'ahooks'
+import styles from './styles.module.css' // CHANGE: ADD CSS MODULE
 import useConversation from '@/hooks/use-conversation'
 import Toast from '@/app/components/base/toast'
 import Sidebar from '@/app/components/sidebar'
@@ -414,7 +415,7 @@ const Main: FC = () => {
           {
             hasSetInputs && (
               <div className='relative grow h-[200px] pc:w-[794px] max-w-full mobile:w-full pb-[66px] mx-auto mb-3.5 overflow-hidden'>
-                <div className='h-full overflow-y-auto' ref={chatListDomRef}>
+                <div className={`${styles.handleChatArea} h-full overflow-y-auto`} ref={chatListDomRef}>
                   <Chat
                     chatList={chatList}
                     onSend={handleSend}
