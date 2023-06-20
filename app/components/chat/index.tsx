@@ -176,7 +176,9 @@ const Answer: FC<IAnswerProps> = ({ item, feedbackDisabled = false, onFeedback, 
         </div>
         <div className={`${s.answerWrap}`}>
           <div className={`${s.answer} relative text-sm text-gray-900`}>
-            <div className={'ml-2 py-3 px-4 bg-gray-100 rounded-tr-2xl rounded-b-2xl'}>
+            {/* CHANGE: BUBBLE LEFT CHAT */}
+            {/* <div className={'ml-2 py-3 px-4 bg-gray-100 rounded-tr-2xl rounded-b-2xl'}> */}
+            <div className={'ml-2 py-3 px-4 bg-[#1E222C] rounded-tr-2xl rounded-b-2xl'}>
               {item.isOpeningStatement && (
                 <div className='flex items-center mb-1 gap-1'>
                   <OpeningStatementIcon />
@@ -213,9 +215,9 @@ const Question: FC<IQuestionProps> = ({ id, content, useCurrentUserAvatar }) => 
     <div className='flex items-start justify-end' key={id}>
       <div>
         <div className={`${s.question} relative text-sm text-gray-900`}>
-          <div
-            className={'mr-2 py-3 px-4 bg-blue-500 rounded-tl-2xl rounded-b-2xl'}
-          >
+          {/* CHANGE: BUBBLE RIGHT CHAT */}
+          {/* <div className={'mr-2 py-3 px-4 bg-blue-500 rounded-tl-2xl rounded-b-2xl'}> */}
+          <div className={'mr-2 py-3 px-4 bg-[#002F44] rounded-tl-2xl rounded-b-2xl'}>
             <Markdown content={content} />
           </div>
         </div>
