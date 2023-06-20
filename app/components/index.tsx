@@ -381,7 +381,9 @@ const Main: FC = () => {
         onShowSideBar={showSidebar}
         onCreateNewChat={() => handleConversationIdChange('-1')}
       />
-      <div className="flex rounded-t-2xl bg-white overflow-hidden">
+      {/* CHANGE: AREA BODY BACKGROUND COLOR */}
+      {/* <div className="flex rounded-t-2xl bg-white overflow-hidden"> */}
+      <div className="flex rounded-t-2xl bg-[#060A14] overflow-hidden">
         {/* sidebar */}
         {!isMobile && renderSidebar()}
         {isMobile && isShowSidebar && (
