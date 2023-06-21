@@ -321,6 +321,17 @@ const Chat: FC<IChatProps> = ({
         !isHideSendInput && (
           <div className={cn(!feedbackDisabled && '!left-3.5 !right-3.5', 'absolute z-10 bottom-0 left-0 right-0')}>
             <div className="positive">
+              {/* <AutoHeightTextarea
+                value={query}
+                onChange={handleContentChange}
+                onKeyUp={handleKeyUp}
+                onKeyDown={haneleKeyDown}
+                minHeight={48}
+                autoFocus
+                controlFocus={controlFocus}
+                className={`${cn(s.textArea)} resize-none block w-full pl-3 bg-gray-50 border border-gray-200 rounded-md focus:outline-none sm:text-sm text-gray-700`}
+              /> */}
+              {/* CHANGE: FORM INPUT BACKGROUND */}
               <AutoHeightTextarea
                 value={query}
                 onChange={handleContentChange}
@@ -329,10 +340,12 @@ const Chat: FC<IChatProps> = ({
                 minHeight={48}
                 autoFocus
                 controlFocus={controlFocus}
-                className={`${cn(s.textArea)} resize-none block w-full pl-3 bg-gray-50 border border-gray-200 rounded-md  focus:outline-none sm:text-sm text-gray-700`}
+                className={`${cn(s.textArea)} resize-none block w-full pl-3 bg-[#272C36] border border-[#272C36] rounded-md focus:outline-none sm:text-sm text-gray-200`}
               />
               <div className="absolute top-0 right-2 flex items-center h-[48px]">
-                <div className={`${s.count} mr-4 h-5 leading-5 text-sm bg-gray-50 text-gray-500`}>{query.trim().length}</div>
+                {/* <div className={`${s.count} mr-4 h-5 leading-5 text-sm bg-gray-50 text-gray-500`}>{query.trim().length}</div> */}
+                {/* CHANGE: FORM INPUT BACKGROUND */}
+                <div className={`${s.count} mr-4 h-5 leading-5 text-sm bg-transparent text-gray-500`}>{query.trim().length}</div>
                 <Tooltip
                   selector='send-tip'
                   htmlContent={
