@@ -8,7 +8,7 @@ const translation = {
     newChat: 'New chat',
     newChatDefaultName: 'New conversation',
     openingStatementTitle: 'Opening statement',
-    powerBy: 'Powered by',
+    powerBy: 'Powered by BIMBIT', // CHANGE: WELCOME HEADER POWERED BY BIMBIT
     prompt: 'Prompt',
     privatePromptConfigTitle: 'Conversation settings',
     publicPromptConfigTitle: 'Initial Prompt',
