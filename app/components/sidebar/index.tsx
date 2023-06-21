@@ -52,16 +52,27 @@ const Sidebar: FC<ISidebarProps> = ({
           const ItemIcon
             = isCurrent ? ChatBubbleOvalLeftEllipsisSolidIcon : ChatBubbleOvalLeftEllipsisIcon
           return (
+            // <div
+            //   onClick={() => onCurrentIdChange(item.id)}
+            //   key={item.id}
+            //   className={classNames(
+            //     isCurrent
+            //       ? 'bg-primary-50 text-primary-600'
+            //       : 'text-gray-700 hover:bg-gray-100 hover:text-gray-700',
+            //     'group flex items-center rounded-md px-2 py-2 text-sm font-medium cursor-pointer',
+            //   )}
+            // >
             <div
               onClick={() => onCurrentIdChange(item.id)}
               key={item.id}
               className={classNames(
                 isCurrent
-                  ? 'bg-primary-50 text-primary-600'
-                  : 'text-gray-700 hover:bg-gray-100 hover:text-gray-700',
+                  ? 'bg-primary-200 text-primary-600 bg-opacity-75'
+                  : 'text-gray-200 hover:bg-gray-200 hover:text-gray-600 hover:bg-opacity-75',
                 'group flex items-center rounded-md px-2 py-2 text-sm font-medium cursor-pointer',
               )}
             >
+              {/* CHANGE: SIDEBAR LIST COLOR */}
               <ItemIcon
                 className={classNames(
                   isCurrent
