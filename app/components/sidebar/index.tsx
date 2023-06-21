@@ -6,7 +6,7 @@ import {
   PencilSquareIcon,
 } from '@heroicons/react/24/outline'
 import { ChatBubbleOvalLeftEllipsisIcon as ChatBubbleOvalLeftEllipsisSolidIcon } from '@heroicons/react/24/solid'
-import Button from '@/app/components/base/button'
+// import Button from '@/app/components/base/button'
 // import Card from './card'
 import type { ConversationItem } from '@/types/app'
 
@@ -38,9 +38,9 @@ const Sidebar: FC<ISidebarProps> = ({
         <div className="flex flex-shrink-0 p-4 !pb-0">
           {/* <Button onClick={() => { onCurrentIdChange('-1') }} className="group block w-full flex-shrink-0 !justify-start !h-9 text-primary-600 items-center text-sm"> */}
           {/* CHANGE: SIDEBAR HEADER BUTTON NEW CHAT */}
-          <Button onClick={() => { onCurrentIdChange('-1') }} className="group block w-full flex-shrink-0 !justify-start !h-9 text-white bg-[#4C83FF] border-none items-center text-sm">
+          <button type='button' onClick={() => { onCurrentIdChange('-1') }} className="group block w-full flex justify-center items-center content-center h-9 leading-5 rounded-lg text-white bg-primary-600 hover:bg-primary-600/75 border-none items-center text-sm">
             <PencilSquareIcon className="mr-2 h-4 w-4" /> <strong className='font-semibold text-[#DEDEDE]'>Tambah Pelajaran Baru</strong>
-          </Button>
+          </button>
         </div>
       )}
 
