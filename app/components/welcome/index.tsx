@@ -83,7 +83,7 @@ const Welcome: FC<IWelcomeProps> = ({
   const renderHeader = () => {
     return (
       // <div className='absolute top-0 left-0 right-0 flex items-center justify-between border-b border-gray-100 mobile:h-12 tablet:h-16 px-8 bg-white'>
-      <div className='absolute top-0 left-0 right-0 flex items-center justify-between mobile:h-12 tablet:h-16 px-8 bg-[#1E222C]'>
+      <div className='fixed md:absolute top-12 md:top-0 left-0 right-0 flex items-center justify-between mobile:h-12 tablet:h-16 px-8 bg-[#1E222C] z-50'>
         {/* CHANGE: AREA BODY header BACKGROUND COLOR */}
         <div className='text-[#DEDEDE] font-semibold'>{conversationName}</div>
       </div>

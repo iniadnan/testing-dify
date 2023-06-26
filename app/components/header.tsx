@@ -19,7 +19,7 @@ const Header: FC<IHeaderProps> = ({
 }) => {
   return (
     // <div className="shrink-0 flex items-center justify-between h-12 px-3 bg-gray-100">
-    <div className="shrink-0 flex items-center justify-between h-12 px-3 bg-[#051721]">
+    <div className="fixed md:relative w-full top-0 shrink-0 flex items-center justify-between h-12 px-3 bg-[#051721] z-50">
       {/* CHANGE: HEADER BACKGROUND COLOR */}
       {isMobile
         ? (
